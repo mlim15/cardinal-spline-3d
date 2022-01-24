@@ -19,8 +19,7 @@
  * @param {Boolean} [close=false] - Close the ends making the line continuous
  * @returns {Float32Array} New array with the calculated points that was added to the path
  */
-module.exports =
-function getCurvePoints(points, tension, numOfSeg, close) {
+export function getCurvePoints(points, tension, numOfSeg, close) {
 
   'use strict';
 
@@ -133,3 +132,4 @@ function getCurvePoints(points, tension, numOfSeg, close) {
   return res
 }
 
+export default getCurvePoints;
